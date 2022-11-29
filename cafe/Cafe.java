@@ -7,9 +7,10 @@ private String cafe;
 private boolean socio;
 
 
-public Cafe(int id, int cantidad, String cafe, boolean socio) {
+public Cafe(int id, int cantidad,int tipocafe, String cafe, boolean socio) {
 	this.id = id;
 	this.cantidad = cantidad;
+	this.tipocafe=tipocafe;
 	this.cafe = cafe;
 	this.socio = socio;
 }
@@ -38,9 +39,6 @@ public boolean isSocio() {
 public void setSocio(boolean socio) {
 	this.socio = socio;
 }
-
-
-
 
 public int getTipocafe() {
 	return tipocafe;
